@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Balance</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="main-div">
+        <h1 class="name">Budget Balance</h1>
+        <div class="main-sec-div">
+        <div class="sec-1">
+  <h1>Budget</h1>
+  <input type="text" id="budget-input" placeholder="Enter your budget">
+  <div>
+  <button id="set-budget">Set Budget</button>
+    <button id="new-budget">New Budget</button>
+</div>
+<p id="remaining-amount"></p>
+  
+        </div>
+        <div class="sec-2">
+<h1>Expenses</h1>
+<input type="text" id="tittle-product" placeholder="Enter Tittle of Product">
+  <input type="text" id="cost-product" placeholder="Enter Cost of Product">
+  <button id="check-amount">Check Amount</button>
+        </div>
+        </div>
+        <div class="budget-list">
+            <div class="total-budget">
+                <h2>Total Budget</h2>
+                <span id="total-budget-value">0</span>
+            </div>
+            <div class="expenses">
+                <h2>Expenses</h2>
+                <span id="total-expenses-value">0</span>
+            </div>
+            <div class="balance">
+                <h2>Balance</h2>
+                <span id="total-balance-value">0</span>
+            </div>
+        </div>
+        <div class="expenses-list">
+            <h1>Expenses List</h1>
+            <ul id="expenses-list-items">
+                <!-- <li>milk <span class="cost">2500</span> <span>delete</span></li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="src/script.js"></script>
+    
+</body>
+</html>
